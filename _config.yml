@@ -5,5 +5,7 @@ url:            "https://l154gamer.github.io/games"
 markdown: kramdown
 future: true
 encoding: UTF-8
+error:
+    text: "Anda tidak dapat mengakses halaman ini."
 include:
   - _pages
