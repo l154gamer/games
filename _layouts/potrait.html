@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name=viewport content="width=device-width">
+<meta name="robots" content="noindex,follow"/>
+<style type="text/css" media="screen">
+    html, body {
+      margin: 0;
+      padding: 0;
+      cursor: inherit;
+      width: 100%;
+      height: 100%;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      overflow: hidden;
+      color: #ffffff;  
+    }
+    body {
+      background: black;
+      padding-bottom: 100%;
+      color: #ffffff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    .game-fallback-container {
+      background: black;
+      position: fixed;
+      width: 100%;
+      color: #ffffff;  
+    }
+.dynamic-content {
+    display:none;
+}
+</style>
+</head>
+<body>
+ {{ content }}
+<script>
+  window.addEventListener('resize', (event) => {
+    window.defaultMinimalHeight = window.innerHeight;
+    document.querySelector('.game-fallback-container').style.height = window.innerHeight + 'px';
+  });
+  window.addEventListener('load', (event) => {
+    document.querySelector('.game-fallback-container').style.height = window.innerHeight + 'px';
+    window.defaultMinimalHeight = window.innerHeight;
+
+    document.addEventListener("touchmove", ScrollStart, false);
+    document.addEventListener("scroll", Scroll, false);
+
+    function ScrollStart() {
+      if (window.currentHeight !== window.innerHeight) {
+        window.currentHeight = window.innerHeight;
+        document.querySelector('.game-fallback-container').style.height = (window.innerHeight < window.defaultMinimalHeight) ? window.defaultMinimalHeight + 'px' : window.innerHeight + 'px';
+      }
+    }
+
+    function Scroll() {
+      if (window.currentHeight !== window.innerHeight) {
+        window.currentHeight = window.innerHeight;
+        document.querySelector('.game-fallback-container').style.height = (window.innerHeight < window.defaultMinimalHeight) ? window.defaultMinimalHeight + 'px' : window.innerHeight + 'px';
+      }
+    }
+
+    document.querySelector('.game-fallback-container').style.height = window.innerHeight + 'px';
+  })
+  </script>    
+ </body>
+</html>
