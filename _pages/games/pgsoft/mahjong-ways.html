@@ -1,6 +1,7 @@
 ---
 layout: potrait
 Title: Mahjong Ways PGSoft
+error: true
 permalink: pg65
 ---
 
@@ -11,7 +12,7 @@ permalink: pg65
   scrolling="no"></iframe>
 </div>
 <div id="error" class="dynamic-content">
- <p>Anda tidak dapat mengakses halaman ini.</p>
+ {% if page.error %}<p>{{ site.error.text }}</p>{% endif %}   
 </div>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
