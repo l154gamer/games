@@ -1,25 +1,31 @@
 gates-of-olympus:
   title: Gates of Olympus
   symbol: vs20olympgate
+  gameid: gatesofolympus
   permalink: https://demogamesfree.ppgames.net/gs2c/openGame.do?lang=id&cur=IDR&jurisdiction=99&gameSymbol=vs20olympgate
 starlight-princess: 
   title: Starlight Princess
   symbol: vs20starlight
+  gameid: starlightprincess
   permalink: https://demogamesfree.ppgames.net/gs2c/openGame.do?lang=id&cur=IDR&jurisdiction=99&gameSymbol=vs20starlight
 starlight-princess1000:
   title: Starlight Princess 1000
   symbol: vs20starlightx
+  gameid: starlightprincess1000
   permalink: https://demogamesfree.ppgames.net/gs2c/openGame.do?lang=id&cur=IDR&jurisdiction=99&gameSymbol=vs20starlightx
 starlight-christmas:
   title: Starlight Christmas
   symbol: vs20schristmas
+  gameid: starlightchristmas
   permalink: https://demogamesfree.ppgames.net/gs2c/openGame.do?lang=id&cur=IDR&jurisdiction=99&gameSymbol=vs20schristmas
 gatotkaca:
   title: Gates of Gatot Kaca
   symbol: vs20gatotgates
+  gameid: gatesofgatotkaca
   permalink: https://demogamesfree.ppgames.net/gs2c/openGame.do?lang=id&cur=IDR&jurisdiction=99&gameSymbol=vs20gatotgates
 gatotkaca-fury:
   title: Gatot Kaca Fury
   symbol: vs20gatotfury
+  gameid: gatotkacafury
   permalink: https://demogamesfree.ppgames.net/gs2c/openGame.do?lang=id&cur=IDR&jurisdiction=99&gameSymbol=vs20gatotfury
 
