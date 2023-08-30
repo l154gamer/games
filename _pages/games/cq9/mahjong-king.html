@@ -3,8 +3,8 @@ layout: landscape
 permalink: games/cq9
 ---
 
-<div id="{{ site.data.game.mahjong-king-cq9.gameid }}" class="iframe dynamic-content">
-    <iframe src="{{ site.data.game.mahjong-king-cq9.permalink }}"  
+<div id="{{ site.data.cq9.mahjong-king-cq9.gameid }}" class="iframe dynamic-content">
+    <iframe src="{{ site.data.cq9.mahjong-king-cq9.permalink }}"  
       allowtransparency="true" frameborder="0" scrolling="no" 
  allowfullscreen 
       mozallowfullscreen webkitallowfullscreen oallowfullscreen 
@@ -26,8 +26,8 @@ permalink: games/cq9
 	}
 	var dynamicContent = getParameterByName('gameid');
 	 $(document).ready(function() {
-		if (dynamicContent == '{{ site.data.game.mahjong-king-cq9.gameid }}') {
-			$('#{{ site.data.game.mahjong-king-cq9.gameid }}').show();
+		if (dynamicContent == '{{ site.data.cq9.mahjong-king-cq9.gameid }}') {
+			$('#{{ site.data.cq9.mahjong-king-cq9.gameid }}').show();
 		}
 		else {
 			$('#error').show();
